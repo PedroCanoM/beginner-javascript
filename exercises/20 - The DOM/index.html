@@ -6,10 +6,26 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>The DOM</title>
   <link rel="stylesheet" href="../../base.css">
+
+  <style>
+    img {
+      transition: all 0.2s;
+    }
+    .round {
+      border-radius: 50%;
+      transform: rotate(20deg);
+      box-shadow: 0 0 10px black;
+    }
+  </style>
 </head>
 
 <body>
-  <div class="items">
+  <img class="custom" data-name="wes" data-last = "bos" src="https://picsum.photos/200" />
+  <img data-name="kait" src="https://picsum.photos/200" />
+  <img data-name="lux" src="https://picsum.photos/200" />
+
+  <img class="nice cool" src="https://picsum.photos/500" />
+  <div class="item">
     <p>Hi I'm a item</p>
     <div>
       <h2>Sub Div</h2>
@@ -20,6 +36,16 @@
     <p>Hi I'm a item</p>
     <p>Hi I'm a item</p>
   </div>
+  
+  <p class="wes">
+    I am Wes, I <em>love</em> to bbq and <strong>Make websites!</strong>
+  </p>
+
+  <!-- <article class="item">
+    <h2>Im an article</h2>
+    <p class="pizza">This is how many pizzas I ate! 🍕</p>
+  </article> -->
+  <script src="./traversing.js"></script>
 </body>
 
 </html>
