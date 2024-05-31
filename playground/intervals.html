@@ -11,8 +11,20 @@
 <body>
 
   <script>
+    function destroy() {
+      document.body.innerHTML = `<p>DESTROYED</p>`;
+    }
+
+    const bombTimer = setTimeout(destroy, 2000);
     
+    window.addEventListener("click", function() {
+      console.log("You clicked! You saved the world!");
+      clearTimeout(bombTimer);
+      // How do you stop the timer from running?!
+    });
+
   </script>
 </body>
 
 </html>
+ 
